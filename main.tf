@@ -18,7 +18,7 @@ resource "azurerm_subnet" "my_terraform_subnet" {
   virtual_network_name = azurerm_virtual_network.my_terraform_network.name
   address_prefixes     = ["10.0.1.0/24"]
 }
-
+/*
 # Create public IPs
 resource "azurerm_public_ip" "my_terraform_public_ip" {
   name                = "${random_pet.prefix.id}-public-ip"
@@ -155,3 +155,5 @@ resource "random_pet" "prefix" {
   prefix = var.prefix
   length = 1
 }
+
+*/
