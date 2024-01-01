@@ -1,3 +1,9 @@
+resource "azurerm_resource_group" "example" {
+  name     = "example"
+  location = "West Europe"
+}
+
+/*
 resource "azurerm_resource_group" "rg" {
   location = var.resource_group_location
   name     = "${random_pet.prefix.id}-rg"
@@ -18,7 +24,7 @@ resource "azurerm_subnet" "my_terraform_subnet" {
   virtual_network_name = azurerm_virtual_network.my_terraform_network.name
   address_prefixes     = ["10.0.1.0/24"]
 }
-/*
+
 # Create public IPs
 resource "azurerm_public_ip" "my_terraform_public_ip" {
   name                = "${random_pet.prefix.id}-public-ip"
